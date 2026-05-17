@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,7 +20,6 @@
             line-height: 1.6;
         }
 
-        /* MENÚ DE NAVEGACIÓN */
         nav {
             position: sticky;
             top: 0;
@@ -202,6 +202,7 @@
             0% {
                 transform: translateX(0);
             }
+
             100% {
                 transform: translateX(-100%);
             }
@@ -245,7 +246,7 @@
         }
 
         .gallery-item {
-            border: 3px solid 3rgba(255, 255, 255, 0.5);
+            border: 3px solid rgba(255, 255, 255, 0.5);
             padding: 15px;
             text-align: center;
             background: rgba(255, 255, 255, 0.1);
@@ -298,7 +299,6 @@
             border-radius: 8px;
         }
 
-        /* LETRA DE CANCIÓN */
         .lyrics-container {
             background: rgba(255, 255, 255, 0.15);
             padding: 20px;
@@ -342,7 +342,6 @@
             border-top: 3px solid #333;
         }
 
-        /* BOTÓN FLOTANTE DE REDES SOCIALES */
         .floating-social {
             position: fixed;
             bottom: 30px;
@@ -459,8 +458,8 @@
         }
     </style>
 </head>
+
 <body>
-    <!-- MENÚ DE NAVEGACIÓN -->
     <nav>
         <ul>
             <li><a href="#datos">Datos Personales</a></li>
@@ -473,16 +472,35 @@
             <li><a href="#metas">Metas</a></li>
         </ul>
     </nav>
+    <div class="carousel-container">
+        <div class="carousel">
+            <div class="carousel-item">
+                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot_20260421_001740_Facebook-2hRfc3b82iY5Pc9PT0misOQCEGYNQe.jpg"
+                    alt="Left 4 Dead 2">
+
+            </div>
+            <div class="carousel-item">
+                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot_20260417_080447_Gallery-S6lQS79m4BVSocm7q3f6THKcnXwwnX.jpg"
+                    alt="Free Fire">
+
+            </div>
+            <div class="carousel-item">
+                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1776745906794-lKXEpf2ZcajbTnTRxIr1pkfRZuHi4k.png""
+                    alt=" Free Fire Logros">
+
+            </div>
+        </div>
+    </div>
+    </div>
 
     <div class="container">
-        <!-- Header -->
         <div class="header">
-            <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot_20260417_080447_Gallery-S6lQS79m4BVSocm7q3f6THKcnXwwnX.jpg" alt="Ángel Fernando Espinoza Condori" class="profile-pic">
+            <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot_20260417_080447_Gallery-S6lQS79m4BVSocm7q3f6THKcnXwwnX.jpg"
+                alt="Ángel Fernando Espinoza Condori" class="profile-pic">
             <h1>Ángel Fernando Espinoza Condori</h1>
             <p class="subtitle">Mi Perfil Personal</p>
         </div>
 
-        <!-- Datos Personales -->
         <div class="section section-datos" id="datos">
             <h2>Datos Personales</h2>
             <div class="info-row">
@@ -498,12 +516,15 @@
                 <span>La Paz</span>
             </div>
             <div class="info-row">
+                <strong>zona:</strong>
+                <span>puente toparter / frente teleferico rojo estacion central</span>
+            </div>
+            <div class="info-row">
                 <strong>Carrera:</strong>
                 <span>Ingeniería de Sistemas</span>
             </div>
         </div>
 
-        <!-- Datos Generales -->
         <div class="section section-generales" id="generales">
             <h2>Datos Generales</h2>
             <h3>Pasatiempos</h3>
@@ -514,19 +535,20 @@
             <p>Redes, programación, inteligencia artificial</p>
         </div>
 
-        <!-- Canción Favorita -->
         <div class="section section-cancion" id="cancion">
             <h2>Canción Favorita</h2>
             <div class="gallery">
                 <div class="gallery-item">
-                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/images%20%284%29-YXKXVu8FaCRDcMCr1fe0GrBviOUCmP.jpeg" alt="Esta Noche - Justin Quiles">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/images%20%284%29-YXKXVu8FaCRDcMCr1fe0GrBviOUCmP.jpeg"
+                        alt="Esta Noche - Justin Quiles">
                     <p>Esta Noche</p>
                 </div>
                 <div class="gallery-item">
                     <div style="padding-top: 20px;">
                         <p><strong>Título:</strong> Esta Noche (Remix)</p>
                         <p><strong>Artista:</strong> Justin Quiles</p>
-                        <p style="margin-top: 20px; font-style: italic;">Mi canción favorita que disfruto escuchando en momentos de descanso.</p>
+                        <p style="margin-top: 20px; font-style: italic;">Mi canción favorita que disfruto escuchando en
+                            momentos de descanso.</p>
                     </div>
                 </div>
             </div>
@@ -565,89 +587,102 @@
             </div>
         </div>
 
-        <!-- Juego Favorito -->
         <div class="section section-juego" id="juego">
             <h2>Juego Favorito</h2>
-            <p style="margin-bottom: 20px;">Mis juegos favoritos que combinan estrategia, trabajo en equipo y entretenimiento:</p>
-            
+            <p style="margin-bottom: 20px;">Mis juegos favoritos que combinan estrategia, trabajo en equipo y
+                entretenimiento:</p>
+
             <div class="carousel-container">
                 <div class="carousel">
                     <div class="carousel-item">
-                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Left4Dead2-UEopF4wVwWZ66qYxoN7JmGWLDJo0l3.jpg" alt="Left 4 Dead 2">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Left4Dead2-UEopF4wVwWZ66qYxoN7JmGWLDJo0l3.jpg"
+                            alt="Left 4 Dead 2">
                         <p>Left 4 Dead 2</p>
+                        <p>lo juego con mis amigos de la universidad es divetido si le ponemos mod a juego </p>
                     </div>
                     <div class="carousel-item">
-                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot_20260420_235735_Free%20Fire-atc1cKJpC9Tp5iYf4mhBc20hiEwvy9.jpg" alt="Free Fire">
-                        <p>Free Fire - Perfil</p>
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot_20260420_235735_Free%20Fire-atc1cKJpC9Tp5iYf4mhBc20hiEwvy9.jpg"
+                            alt="Free Fire">
+                        <p>Free Fire - Perfil </p>
+                        <p>lo jugue desde año 2020 casi cuando salio actual mente no lo juego con frecuencia </p>
                     </div>
                     <div class="carousel-item">
-                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/5jsz3volh8871-cHVa9fMjI8CCMm9wFAhNhOFJClzGRc.png" alt="Free Fire Logros">
-                        <p>Free Fire - Logros</p>
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/5jsz3volh8871-cHVa9fMjI8CCMm9wFAhNhOFJClzGRc.png"
+                            alt="Free Fire Logros">
+                        <p>steam - Logros
+
+                        </p>
                     </div>
+
                     <div class="carousel-item">
-                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Left4Dead2-UEopF4wVwWZ66qYxoN7JmGWLDJo0l3.jpg" alt="Left 4 Dead 2">
-                        <p>Left 4 Dead 2</p>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot_20260420_235735_Free%20Fire-atc1cKJpC9Tp5iYf4mhBc20hiEwvy9.jpg" alt="Free Fire">
-                        <p>Free Fire - Perfil</p>
+                        <img src="https://img.utdstc.com/screen/28d/9ba/28d9baf445819ae604932fe1831bf618bb5f554616f740593528673e71ceb35a:400"
+                            alt="Free Fire">
+                        <p>mobile legends</p>
+                        <p>megusta juegalo con musica a full juego en modo jungla y adc </p>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- Series Favoritas -->
         <div class="section section-series" id="series">
             <h2>Series Favoritas</h2>
             <p style="margin-bottom: 20px;">Mis series favoritas que disfrutó viendo:</p>
-            
+
             <div class="gallery-full">
                 <div class="gallery-full-item">
-                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/El_juego_del_calamar-8d2CCXwqFCECvTH06aIiLYWqmizKu.webp" alt="El Juego del Calamar">
+                    <img src="https://ca-times.brightspotcdn.com/dims4/default/d5c7185/2147483647/strip/true/crop/5906x3937+0+0/resize/2400x1600!/format/webp/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F58%2F4e%2Fa59edfeb4c00b85217973e5560f6%2Fsquidgame-unit-104-442.jpg"
+                        alt="El Juego del Calamar">
                     <p>El Juego del Calamar</p>
                 </div>
                 <div class="gallery-full-item">
-                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/images-XPnB0UwCZNlbgkFzIIwmO590FFGo7t.webp" alt="Ese es mi hijo">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/images-XPnB0UwCZNlbgkFzIIwmO590FFGo7t.webp"
+                        alt="Ese es mi hijo">
                     <p>Ese es mi hijo</p>
                 </div>
                 <div class="gallery-full-item">
-                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot_20260420_235735_Free%20Fire-atc1cKJpC9Tp5iYf4mhBc20hiEwvy9.jpg" alt="Entretenimiento">
+                    <img src="https://roll.pawa.cl/img/2020/11/27144005/82267adb8dce3a90ee2e3b03c23c03c2c0fab111070f5109784fdbfc6bf1085f._RI_V_TTW_.jpg"
+                        alt="Entretenimiento">
                     <p>Otras Series</p>
                 </div>
             </div>
         </div>
 
-        <!-- Proyectos Destacados -->
         <div class="section section-proyectos" id="proyectos">
             <h2>Proyectos Destacados</h2>
             <p style="margin-bottom: 20px;">Proyectos académicos y profesionales en los que he trabajado:</p>
-            
+
             <div class="gallery-full">
                 <div class="gallery-full-item">
-                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Captura%20%281%29-90yToBQdQT157whl8I16dMNTN9pLTB.png" alt="Diagrama de Electrónica">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Captura%20%281%29-90yToBQdQT157whl8I16dMNTN9pLTB.png"
+                        alt="Diagrama de Electrónica">
                     <p>Proyecto Electrónica</p>
                 </div>
                 <div class="gallery-full-item">
-                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot_20260421_001740_Facebook-2hRfc3b82iY5Pc9PT0misOQCEGYNQe.jpg" alt="Equipo de Trabajo">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot_20260421_001740_Facebook-2hRfc3b82iY5Pc9PT0misOQCEGYNQe.jpg"
+                        alt="Equipo de Trabajo">
                     <p>Equipo Expotec II 2025</p>
                 </div>
                 <div class="gallery-full-item">
-                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1776745906794-lKXEpf2ZcajbTnTRxIr1pkfRZuHi4k.png" alt="Proyecto de Redes">
+                    <img src="https://thumbs.dreamstime.com/b/el-administrador-de-la-red-realiza-trabajo-sustituci%C3%B3n-equipos-inform%C3%A1ticos-en-sala-servidores-del-centro-datos-mantenimiento-y-191677034.jpg?w=992"
+                        alt="Proyecto de Redes">
                     <p>Proyecto de Redes</p>
                 </div>
             </div>
         </div>
-
-        <!-- Misión y Visión -->
         <div class="section section-misionvision" id="misionvision">
             <h2>Misión y Visión</h2>
             <h3>Misión</h3>
-            <p>Formarme como profesional en Ingeniería de Sistemas, adquiriendo conocimientos en redes, programación y tecnología para contribuir al desarrollo digital.</p>
+            <p>Formarme como profesional en Ingeniería de Sistemas, adquiriendo conocimientos en redes, programación y
+                tecnología para contribuir al desarrollo digital.</p>
             <h3>Visión</h3>
-            <p>Ser un ingeniero exitoso, trabajar en proyectos tecnológicos importantes y tener estabilidad económica a través de la innovación y el conocimiento técnico.</p>
-        </div>
+            <div class="gallery-full-item">
+                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1776745906794-lKXEpf2ZcajbTnTRxIr1pkfRZuHi4k.png"
+                    alt="Proyecto de Redes">
 
-        <!-- Metas -->
+            </div>
+            <p>Ser un ingeniero exitoso, trabajar en proyectos tecnológicos importantes y tener estabilidad económica a
+                través de la innovación y el conocimiento técnico.</p>
+        </div>
         <div class="section section-metas" id="metas">
             <h2>Metas</h2>
             <ul class="metas-list">
@@ -657,38 +692,34 @@
             </ul>
         </div>
 
-       
-    </script>
-</body>
-<div class="footer">
+        <div class="footer">
             <h3>Mi Perfil Completo</h3>
             <p style="margin-top: 10px; color: #666;">Haz clic en el botón flotante para conectar conmigo</p>
         </div>
     </div>
-
-    <!-- BOTÓN FLOTANTE DE REDES SOCIALES -->
     <div class="floating-social" id="floatingSocial">
         <span class="social-icon">📱</span>
         <div class="social-links">
             <a href="https://www.facebook.com/share/18JWUD2Js5/" target="_blank">Facebook</a>
-            <a href="https://www.instagram.com/angelfernandoespinozacondori?igsh=MTJwdXM5djVocG1vNA==" target="_blank">Instagram</a>
+            <a href="https://www.instagram.com/angelfernandoespinozacondori?igsh=MTJwdXM5djVocG1vNA=="
+                target="_blank">Instagram</a>
             <a href="https://whatsapp.com/dl/" target="_blank">WhatsApp</a>
         </div>
     </div>
 
     <script>
-        // Expandir/Contraer el botón flotante de redes sociales
         const floatingSocial = document.getElementById('floatingSocial');
-        
-        floatingSocial.addEventListener('click', function(e) {
+
+        floatingSocial.addEventListener('click', function (e) {
             e.stopPropagation();
             this.classList.toggle('expanded');
         });
-
-        // Cerrar al hacer clic afuera
-        document.addEventListener('click', function(event) {
+        document.addEventListener('click', function (event) {
             if (!floatingSocial.contains(event.target)) {
                 floatingSocial.classList.remove('expanded');
             }
         });
+    </script>
+</body>
+
 </html>
